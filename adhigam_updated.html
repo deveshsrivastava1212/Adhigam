@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhigam - Empowering Communities Through Education</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="Adhigam_Logo.jpg">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="Adhigam_Logo.jpg" alt="Adhigam Logo" />
+                <span>Adhigam</span>
+            </div>
+
+            <!-- Hamburger Button for Mobile -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-controls="mainNavMenu"
+                aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="mainNavMenu">
+                <li class="nav-close-btn">
+                    <button class="menu-close" id="menuClose" aria-label="Close navigation menu">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#donate" class="btn-donate">Donate</a></li>
+            </ul>
+        </div>
+
+        <!-- Mobile Overlay Menu -->
+        <div class="nav-overlay" id="navOverlay"></div>
+    </nav>
+
+    <!-- Hero Section with Slider -->
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <img src="Adhigam_Logo.jpg" alt="Adhigam Youth Foundation Logo" class="hero-logo-animate" />
+                    </div>
+                    <h1>Empowering Communities <br /> Through Education</h1>
+                    <p>Building self-reliant, forward-thinking communities by equipping individuals with knowledge,
+                        tools, and support for sustainable growth.</p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn-primary">Learn More</a>
+                        <a href="#donate" class="btn-secondary">Donate Now</a>
+                    </div>
+                </div>
+                <div class="slide-bg" style="background-image: url('src/asset/main2.jpg')"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <img src="Adhigam_Logo.jpg" alt="Adhigam Youth Foundation Logo" class="hero-logo-animate" />
+                    </div>
+                    <h1>Creative Learning & Skill Development</h1>
+                    <p>Weekly sessions using fun games, storytelling, and art activities to develop critical thinking
+                        and self-expression.</p>
+                    <div class="hero-buttons">
+                        <a href="#programs" class="btn-primary">Our Programs</a>
+                        <a href="#gallery" class="btn-secondary">View Gallery</a>
+                    </div>
+                </div>
+                <div class="slide-bg" style="background-image: url('src/asset/main1.jpg')"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <img src="Adhigam_Logo.jpg" alt="Adhigam Youth Foundation Logo" class="hero-logo-animate" />
+                    </div>
+                    <h1>Cultural Preservation <br /> Through Arts</h1>
+                    <p>Kathak dance and theatre groups helping children explore culture, build confidence, and develop
+                        communication skills.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">Join Us</a>
+                        <a href="#events" class="btn-secondary">Get Involved</a>
+                    </div>
+                </div>
+                <div class="slide-bg" style="background-image: url('src/asset/main3.jpg')"></div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider-dots"></div>
+            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Adhigam</h2>
+                <p>Empowering communities through education, awareness, and skill development</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>We envision a community that is empowered, self-sustaining, and resilient—thriving through its
+                        own resources and ingenuity. By nurturing independence and long-term growth, we aim to inspire
+                        individuals to take ownership of their futures and become catalysts for enduring, positive
+                        transformation.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>Our mission is to cultivate a self-reliant, forward-thinking community by equipping individuals
+                        with the tools, knowledge, and support needed to fuel sustainable growth. We champion
+                        resilience, spark innovation, and foster collaborative spirit.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Our Values</h3>
+                    <div class="values-grid">
+                        <span class="value-tag">Integrity</span>
+                        <span class="value-tag">Transparency</span>
+                        <span class="value-tag">Accountability</span>
+                        <span class="value-tag">Sustainability</span>
+                        <span class="value-tag">Inclusivity</span>
+                        <span class="value-tag">Compassion</span>
+                        <span class="value-tag">Empathy</span>
+                        <span class="value-tag">Trust</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="programs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Programs</h2>
+                <p>Empowering youth, women, and children through innovative education and skill development</p>
+            </div>
+
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-content">
+                        <h3>Creative Learning & Skill-Building</h3>
+                        <p class="program-age">Ages 4–17 years</p>
+                        <p>Weekly engagements using fun games, storytelling, and art & craft activities aimed at
+                            developing critical thinking, collaboration, and self-expression.</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check"></i> Fun games and activities</li>
+                            <li><i class="fas fa-check"></i> Storytelling sessions</li>
+                            <li><i class="fas fa-check"></i> Art & craft workshops</li>
+                            <li><i class="fas fa-check"></i> Critical thinking development</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-content">
+                        <h3>Kathak Dance Group</h3>
+                        <p class="program-age">All ages welcome</p>
+                        <p>A small but enthusiastic group exploring classical dance as a way to connect with culture and
+                            build confidence, discipline, and joy.</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check"></i> Classical dance training</li>
+                            <li><i class="fas fa-check"></i> Cultural connection</li>
+                            <li><i class="fas fa-check"></i> Confidence building</li>
+                            <li><i class="fas fa-check"></i> Performance opportunities</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-content">
+                        <h3>Theatre Group</h3>
+                        <p class="program-age">Ages 8–17 years</p>
+                        <p>Focused on performance, roleplay, and storytelling to help children explore emotions, social
+                            issues, and communication.</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check"></i> Performance training</li>
+                            <li><i class="fas fa-check"></i> Roleplay activities</li>
+                            <li><i class="fas fa-check"></i> Storytelling workshops</li>
+                            <li><i class="fas fa-check"></i> Social issue awareness</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="impact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Impact</h2>
+                <p>Transforming lives and building stronger communities</p>
+            </div>
+
+            <div class="impact-stats-grid">
+                <div class="impact-stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3 class="counter" data-target="200">0</h3>
+                    <p>Children Empowered</p>
+                </div>
+                <div class="impact-stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3 class="counter" data-target="50">0</h3>
+                    <p>Weekly Sessions</p>
+                </div>
+                <div class="impact-stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="counter" data-target="3">0</h3>
+                    <p>Active Programs</p>
+                </div>
+                <div class="impact-stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="counter" data-target="20">0</h3>
+                    <p>Volunteers</p>
+                </div>
+            </div>
+
+            <div class="section-header">
+                <h2>Success Stories</h2>
+                <div class="stories-grid">
+                    <div class="story-card">
+                        <div class="profile-passport">
+                            <img src="src/asset/yusuf.jpg" alt="Success Story">
+                        </div>
+                        <div class="story-content">
+                            <h4>Unlocking Confidence: Yusuf's transformation</h4>
+                            <p>"When we first met Yusuf, he was a very reserved child. He rarely spoke to anyone outside
+                                his small circle of close friends. During our visits, he would quietly observe us from a
+                                distance but never join in the games or activities...."</p>
+                        </div>
+                        <div class="story-actions">
+                            <button class="read-more" onclick="openStory('priyaStory')">
+                                <i class="fas fa-book-open"></i> Read More
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="story-card">
+                        <div class="profile-passport">
+                            <img src="src/asset/ritu.jpg" alt="Success Story">
+                        </div>
+                        <div class="story-content">
+                            <h4>Ritu's Journey</h4>
+                            <p>"Ritu, a passionate member of our Community Engagement Team, is a wonderful example of
+                                how life can change when you find the right purpose."</p>
+                        </div>
+                        <div class="story-actions">
+                            <button class="read-more" onclick="openStory('culturalStory')">
+                                <i class="fas fa-book-open"></i> Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Story Modals -->
+            <div id="priyaStory" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeStory('priyaStory')">&times;</span>
+                    <h2>Unlocking Confidence: Yusuf's transformation</h2>
+                    <p>When we first met Yusuf, he was a very reserved child. He rarely spoke to anyone outside his
+                        small circle of close friends. During our visits, he would quietly observe us from a distance
+                        but never join in the games or activities.<br /><br />
+
+                        But change takes just a spark of connection. As we slowly began talking to him, listening to
+                        him, and encouraging him, Yusuf started opening up. Step by step, he began engaging with us,
+                        sharing his thoughts, and taking part in group activities.<br><br>
+
+                        Today, Yusuf is not only an active participant but also a proud member of our theatre group. He
+                        is learning, performing, and improving his acting skills every single day. His journey from
+                        silence to expression is an inspiring reminder that with the right support and safe space, every
+                        child has the power to shine.</p>
+                </div>
+            </div>
+
+            <div id="culturalStory" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeStory('culturalStory')">&times;</span>
+                    <h2>Ritu's Journey</h2>
+                    <p>Just a year before joining Adhigam, Ritu faced one of the toughest phases of her life. Her
+                        childhood dream was to become an air hostess, but due to personal and family reasons, that dream
+                        could not come true. The setback left her broken and disappointed. But instead of giving up, she
+                        chose a new direction. Ritu completed her B.Ed. degree last year and began her training in the
+                        teaching field.<br /><br />
+
+                        It was through Nidhi, our founder, that Ritu first came to know about Adhigam. At the beginning,
+                        she thought of visiting "just once" to see how it works. But when she came for the very first
+                        time and met the children, she instantly felt a deep connection. That day she realized this is
+                        not something temporary—this is something she wanted to continue and grow with.<br /><br />
+
+                        With the support of her parents and encouragement from the Adhigam family, Ritu started engaging
+                        with children and youth in the community. She discovered a new kind of joy in working with
+                        them—helping them grow, guiding them, and empowering them with confidence.<br /><br />
+
+                        Ritu often says that Adhigam has given her not just a platform, but also a family where she
+                        feels supported and encouraged. Through her journey here, she has learned many new things, grown
+                        personally, and built the courage to look at her future with hope.<br /><br />
+
+                        Today, Ritu dreams of being with Adhigam for a lifetime, working for the cause of making
+                        children and youth self-reliant. Her story is proof that even when one dream breaks, another can
+                        bloom—sometimes more meaningful than the first.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Upcoming Events</h2>
+                <p>Join us in our community activities and programs</p>
+            </div>
+            <div class="events-grid" id="eventsContainer">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">16</span>
+                        <span class="month">Nov</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Children's Day Event</h3>
+                        <p class="event-time"><i class="fas fa-clock"></i> 10:00 AM - 12:00 PM</p>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Community Center, IG Camp Ashram
+                        </p>
+                        <p>Celebrate the spirit of childhood with us this Children's Day! Join us for a day full of fun,
+                            learning, and unforgettable memories.</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">Every</span>
+                        <span class="month">Sun</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Creative Learning Sessions</h3>
+                        <p class="event-time"><i class="fas fa-clock"></i> 10:00 AM - 2:00 PM</p>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Community Center, IG Camp Ashram
+                        </p>
+                        <p style="margin-bottom: 14px;">Witness the beautiful performances by our Kathak dance students
+                            showcasing their skills.</p>
+                        <a class="btn-register" href="https://forms.gle/KRyeSJgKBx8kgmCF9" target="_blank">Register
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gallery</h2>
+                <p>Capturing moments of learning, growth, and community</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="src/asset/creative_learn1.jpg" alt="Creative Learning">
+                    <div class="gallery-overlay">
+                        <h3>Creative Learning Session</h3>
+                        <p>Children engaged in art and craft activities</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="src/asset/kathak1.jpg" alt="Kathak Performance">
+                    <div class="gallery-overlay">
+                        <h3>Kathak Performance</h3>
+                        <p>Students showcasing their dance skills</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="src/asset/theater1.jpg" alt="Theatre Workshop">
+                    <div class="gallery-overlay">
+                        <h3>Theatre Workshop</h3>
+                        <p>Drama and acting sessions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What People Say</h2>
+                <p>Testimonials from our community members and supporters</p>
+            </div>
+            <div class="testimonials-grid" id="testimonialsContainer">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Adhigam Youth Foundation is doing incredible work in giving children opportunities they
+                            might not otherwise have. Through storytelling, art and craft, stage performances, dance,
+                            and communication activities, they help children express themselves, build confidence, and
+                            explore their creativity. Their programs create a safe and inspiring space where every child
+                            can grow, have fun, and discover new skills."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="src/asset/img1.jpg" alt="Author">
+                        <div>
+                            <h3>Monika Gupta</h3>
+                            <span>Parent</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"I visited Adhigam Youth Foundation for just one day, but the experience left a lasting
+                            impression on me. The warmth, energy, and creativity I witnessed among the children and the
+                            team were truly inspiring. It was wonderful to see how beautifully Adhigam is nurturing
+                            young minds through engaging activities, theatre, dance, and learning. Even in a single day,
+                            I could feel the positive impact this space is creating for the community. I left with a
+                            heart full of joy and admiration. Kudos to the team for their amazing efforts—I would love
+                            to visit again!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="src/asset/img2.jpg" alt="Author">
+                        <div>
+                            <h3>Soni Mishra</h3>
+                            <span>Volunteer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"I initially joined Adhigam on a friend's suggestion, thinking it would just be for fun.
+                            However, my experience turned out to be so much more meaningful. During my time here, I
+                            learned the value of teamwork, gained new experiences, and had the opportunity to interact
+                            directly with children. These moments were full of joy, yet at the same time, they taught me
+                            lessons that I will carry forward in life. Adhigam has had a truly positive impact on me,
+                            both personally and socially. I am grateful for all the learning, memories, and growth I
+                            experienced here. Thank you, Adhigam, for being such an enriching part of my journey."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="src/asset/img3.jpg" alt="Author">
+                        <div>
+                            <h3>Saloni Thakur</h3>
+                            <span>Ex-Volunteer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section id="volunteer" class="volunteer-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Volunteer With Us?</h2>
+                <p>Make a difference by volunteering with Adhigam</p>
+            </div>
+            <div class="volunteer-benefits">
+                <div class="benefit-item">
+                    <i class="fas fa-heart"></i>
+                    <h4>Hands on field exposure</h4>
+                    <p>Step in and be part of real stories of change. Every moment in the field is a chance to learn and
+                        make a difference.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-users"></i>
+                    <h4>Lead & Learn</h4>
+                    <p>Discover your strengths, build new skills, and grow into a leader-while creating impact that
+                        lasts.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h4>Mentorship & Collaboration</h4>
+                    <p>Embark on your growth journey with experienced mentors and collaborate with energetic peers who
+                        inspire, support, and learn alongside you.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-hands-helping"></i>
+                    <h4>Network of young energy</h4>
+                    <p>Be a part of a vibrant, energetic community of young changemakers-full of ideas, creativity,
+                        laughter and passion-where your presence truly matters.</p>
+                </div>
+            </div>
+
+            <div class="volunteer-content">
+                <div class="volunteer-join volunteer-join-highlight">
+                    <h3>Apply to Volunteer</h3>
+                    <a class="btn-join" href="https://forms.gle/KRyeSJgKBx8kgmCF9" target="_blank">Join Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donate" class="donation-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Support Our Mission</h2>
+                <p>Your donation helps us continue our work in empowering communities</p>
+            </div>
+            <div class="donation-content">
+                <div class="donation-info">
+                    <h3>Why Donate?</h3>
+                    <div class="donation-reasons">
+                        <div class="reason-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Education Access</h4>
+                            <p>Help provide quality education to underprivileged children</p>
+                        </div>
+                        <div class="reason-item">
+                            <i class="fas fa-hands-helping"></i>
+                            <h4>Community Development</h4>
+                            <p>Support programs that strengthen communities</p>
+                        </div>
+                        <div class="reason-item">
+                            <i class="fas fa-heart"></i>
+                            <h4>Sustainable Impact</h4>
+                            <p>Create lasting positive change in society</p>
+                        </div>
+                    </div>
+                    <div class="donation-stats">
+                        <div class="stat">
+                            <h4>500+</h4>
+                            <p>Children Helped</p>
+                        </div>
+                        <div class="stat">
+                            <h4>₹20,000+</h4>
+                            <p>Funds Raised</p>
+                        </div>
+                        <div class="stat">
+                            <h4>25+</h4>
+                            <p>Active Volunteers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="donation-form">
+                    <h3>Make a Donation</h3>
+                    <form id="donationForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" name="amount" placeholder="Donation Amount (₹)" min="100" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="purpose" required>
+                                <option value="">Select Purpose</option>
+                                <option value="education">Education Programs</option>
+                                <option value="cultural">Cultural Activities</option>
+                                <option value="community">Community Development</option>
+                                <option value="general">General Support</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Message (Optional)"></textarea>
+                        </div>
+                        <button type="submit" class="btn-donate" onclick="openDonateDialog(event)">
+                            <i class="fas fa-heart"></i> Donate Now
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you. Reach out to learn more about our programs.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>IG Camp, Hari Nagar. Near- Sunlight Colony<br>Ashram, Delhi 110014</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Headquarter Address</h4>
+                            <p>308-C, BG- 6, Paschim Vihar Near Mohalla<br>Clinic, 110063</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 63923 32324<br>+91 93115 48596</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>adhigamyouthfoundation@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Working Hours</h4>
+                            <p>Monday - Friday: 10:00 AM - 5:00 PM<br>Sunday: 10:00 AM - 2:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm" action="https://formspree.io/f/xyzprawb" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Name *</label>
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email *</label>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject *</label>
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <div id="contactSuccess" style="display:none;color:#267871;margin-top:1rem;font-weight:600;">
+                            Thank you! Your message has been sent.
+                        </div>
+                        <div id="contactError" style="display:none;color:#c00;margin-top:1rem;font-weight:600;">
+                            Sorry, there was an error. Please try again.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="Adhigam_Logo.jpg" alt="Adhigam Logo" />
+                        <h3>Adhigam</h3>
+                    </div>
+                    <p>Empowering communities through education, awareness, and skill development. Building
+                        self-reliant, forward-thinking communities for a better tomorrow.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/adhigam_india?igsh=MTg2MWR4amlrM3E1eg==" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/adhigamyouthfoundation/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#impact">Impact</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Our Programs</h4>
+                    <ul>
+                        <li><a href="#programs">Creative Learning</a></li>
+                        <li><a href="#programs">Kathak Dance</a></li>
+                        <li><a href="#programs">Theatre Group</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="#donate">Donate</a></li>
+                        <li><a href="#volunteer">Volunteer</a></li>
+                        <li><a href="#contact">Partner With Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Adhigam Youth Foundation. All rights reserved. | Designed with ❤️ for a better tomorrow
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Donation Confirmation Dialog -->
+    <div id="donateDialog" class="modal">
+        <div class="modal-content-small">
+            <span class="close" onclick="closeDonateDialog()">&times;</span>
+            <h2>Feature is Coming Soon!</h2><br />
+            <p>Please Contact <strong>+91 63923 32324</strong> to make Donation</p><br />
+            <button class="btn-donate" onclick="closeDonateDialog()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('contactForm');
+            if (form) {
+                form.addEventListener('submit', async function (e) {
+                    e.preventDefault();
+                    const formData = new FormData(form);
+                    try {
+                        const response = await fetch(form.action, {
+                            method: 'POST',
+                            body: formData,
+                            headers: { 'Accept': 'application/json' }
+                        });
+                        if (response.ok) {
+                            document.getElementById('contactSuccess').style.display = 'block';
+                            document.getElementById('contactError').style.display = 'none';
+                            form.reset();
+                        } else {
+                            document.getElementById('contactSuccess').style.display = 'none';
+                            document.getElementById('contactError').style.display = 'block';
+                        }
+                    } catch {
+                        document.getElementById('contactSuccess').style.display = 'none';
+                        document.getElementById('contactError').style.display = 'block';
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>
